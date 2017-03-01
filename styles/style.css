@@ -1,0 +1,17 @@
+#container {
+	margin:50px auto;
+	width:720px;
+	height:720px;
+	border:solid black 1px;
+}
+
+.pixel {
+	/*border: solid black 1px; //////TESTING ONLY, WILL OBSCURE PIXEL SIZE*/
+	width:45px;
+	height:45px;
+	display:inline-block;
+	float:left;
+}
+.pixel:hover{
+	background-color:black; /*TEST COLOR, SHOULD PROBABLY OUTSOURCE THIS TO JS FILE*/
+}

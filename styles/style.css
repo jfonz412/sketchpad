@@ -13,5 +13,5 @@
 	float:left;
 }
 .pixel:hover{
-	background-color:black; /*TEST COLOR, SHOULD PROBABLY OUTSOURCE THIS TO JS FILE*/
+	background-color:#32e38a;
 }

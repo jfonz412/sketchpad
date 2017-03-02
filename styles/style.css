@@ -12,6 +12,10 @@
 	display:inline-block;
 	float:left;
 }
-.pixel:hover{
-	background-color:#32e38a;
+.painted {
+	/*border: solid black 1px; //////TESTING ONLY, WILL OBSCURE PIXEL SIZE*/
+	width:45px;
+	height:45px;
+	display:inline-block;
+	float:left;
 }

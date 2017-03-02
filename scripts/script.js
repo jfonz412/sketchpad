@@ -1,5 +1,6 @@
 var gridSize = 1; //to double pixel amount, multiply by 4
 var pixelSize = 1; //to double pixel amount, divide in half
+var draw = false;
 
 $(document).ready(function(){
 
@@ -11,12 +12,30 @@ $(document).ready(function(){
 	startDraw();
 });	
 
+
+
 var startDraw = function(){
-	/*start drawing*/
-	$('#container').click(function(){
-		$('.pixel').mouseenter(function(){
-			$(this).css('background-color','black');
-		});
+
+	$('html').click(function(){
+
+		draw = !draw;
 		
+		if (draw === true) 
+		{
+			$('.pixel').mouseenter(function(){
+				$(this).css('background-color','black');
+				$(this).addClass('painted');
+				$(this).removeClass('pixel');
+			});
+
+		}
+		else (draw === false)
+		{	
+			$('.pixel').mouseenter(function(){
+				$(this).css('background-color', '');
+			});
+		}
 	});
 };
+
+

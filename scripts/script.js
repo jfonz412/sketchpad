@@ -9,14 +9,32 @@ $(document).ready(function(){
 	{
 		$('#container').append('<div class="pixel"></div>');
 	}
+	
 	startDraw();
+
+	$('#new_sketch').click(function(){
+		$('.pixel').remove();
+		console.log("Grid Cleared");
+		
+
+		//testing add grid back--WORKS!
+		gridSize = prompt("Enter grid size 1-4");
+		pixelSize = .5;
+		for(var i=0;i<(256*gridSize);i++)
+		{
+			$('#container').append('<div class="pixel"></div>');
+		}
+		console.log("Grid re-created");
+		//end testing
+	})
+
 });	
 
 
 
 var startDraw = function(){
 
-	$('html').click(function(){
+	$('#container').click(function(){
 
 		draw = !draw;
 		
@@ -24,16 +42,12 @@ var startDraw = function(){
 		{
 			$('.pixel').mouseenter(function(){
 				$(this).css('background-color','black');
-				$(this).addClass('painted');
-				$(this).removeClass('pixel');
 			});
 
 		}
-		else (draw === false)
+		else
 		{	
-			$('.pixel').mouseenter(function(){
-				$(this).css('background-color', '');
-			});
+			$('.pixel').off('mouseenter');
 		}
 	});
 };

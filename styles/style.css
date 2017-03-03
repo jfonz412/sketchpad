@@ -1,5 +1,5 @@
 #container {
-	margin:50px auto;
+	margin:30px auto;
 	width:720px;
 	height:720px;
 	border:solid black 1px;
@@ -18,4 +18,10 @@
 	height:45px;
 	display:inline-block;
 	float:left;
+}
+
+#buttons{
+	border: 1px solid black;
+	margin:20px auto;
+	text-align: center;
 }

@@ -11,3 +11,6 @@ A "sketchpad" that draws while you hover over a pixel.
 -Got the drawing toggle to work perfectly! The solution was simple: $(.'pixel').off('mouseenter'); shuts off the mouseenter event. I also added the beginnings of the erase-grid button. It works, and I can re-draw the grid and draw on it again. I just need to adjust pixel size accordingly and would like a radio-button prompt instead of an enter-your-own size kind of deal. Might be good to split up this part into several functions, and I should plan it out extensivly on paper first.
 SOLUTION:
 http://stackoverflow.com/questions/42566365/how-can-i-stop-or-toggle-this-mouseenter-function/42566577#42566577
+
+3/4/17 2:14pm:
+-Finished grid resizer. Painting is a little laggy at higher grid size. Next I'd like to implement the shader aspect of it, and if it's not TOO time consuming, the random colored option. After that, its just the finishing asthetic touches.

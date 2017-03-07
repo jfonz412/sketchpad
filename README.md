@@ -14,3 +14,6 @@ http://stackoverflow.com/questions/42566365/how-can-i-stop-or-toggle-this-mousee
 
 3/4/17 2:14pm:
 -Finished grid resizer. Painting is a little laggy at higher grid size. Next I'd like to implement the shader aspect of it, and if it's not TOO time consuming, the random colored option. After that, its just the finishing asthetic touches.
+
+3/6/17 9:09pm:
+-Implemented random color option and eraser, groundwork is there for the shader tool which seems to be the most difficult of all the options. Hopefully nothing too drastic is required, though each function seems pretty seperated by my if/else statements.

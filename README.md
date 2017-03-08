@@ -16,4 +16,7 @@ http://stackoverflow.com/questions/42566365/how-can-i-stop-or-toggle-this-mousee
 -Finished grid resizer. Painting is a little laggy at higher grid size. Next I'd like to implement the shader aspect of it, and if it's not TOO time consuming, the random colored option. After that, its just the finishing asthetic touches.
 
 3/6/17 9:09pm:
--Implemented random color option and eraser, groundwork is there for the shader tool which seems to be the most difficult of all the options. Hopefully nothing too drastic is required, though each function seems pretty seperated by my if/else statements.
+-Implemented random color option and eraser, groundwork is there for the shader tool which seems to be the most difficult of all the options. Hopefully nothing too drastic is required, though each function seems pretty seperated by my if/else statements. (Explaination for random colors in js file)
+
+3/7/17 9:06pm:
+-Finished the shader, needed to parse the float from the string that is the $(this).css('opacity'). There seems to be a glitch where pencil/rainbow will erase pixels and erase will draw solid black. This glitch can fix itself, but I don't know exactly what causes it just yet. Final steps, once again, is to make it look pretty.

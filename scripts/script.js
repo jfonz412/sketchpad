@@ -37,18 +37,19 @@ var startDraw = function(){
 			$('.pixel').mouseenter(function(){
 				if (pencil === true)
 				{
-					//shader code goes here, below does not work
-					$(this).css({
-						'opacity': .1,
-						'background-color': 'black'
-					});
-					var op = $(this).css('opacity');
-					if (op < 1)
+					var opacity = parseFloat($(this).css('opacity'));
+					if (opacity === 0)
 					{
-						var newOp = op*2;
-						$(this).css('opacity', newOP);
+						$(this).css({
+							'opacity': 0.1,
+							'background-color': 'black'
+						});
 					}
-
+					else
+					{
+						opacity += 0.1;
+						$(this).css('opacity', opacity);
+					}
 				}
 				else if (rainbow === true)
 				{
@@ -59,16 +60,25 @@ var startDraw = function(){
 					var b = Math.floor(Math.random() * 255 + 1);
 					var randomColor = "rgb(" + r + "," + g + "," + b +")";
 
-					$(this).css('background-color', randomColor);
+					$(this).css({
+						'background-color': randomColor,
+						'opacity': 1
+					});
 					return; //draws black unless function is broken
 				}
 				else if (erase === true)
 				{
-					$(this).css('background-color', '');
+					$(this).css({
+						'background-color': '',
+						'opacity': 0
+					});
 				}
 				else
 				{
-					$(this).css('background-color', 'black');
+					$(this).css({
+						'background-color': 'black',
+						'opacity': 1
+					});
 				}
 			});
 		}

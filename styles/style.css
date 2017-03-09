@@ -1,8 +1,10 @@
 #container {
-	margin:30px auto;
+	margin: auto;
+	margin-top:0px;
 	width:720px;
 	height:720px;
-	border:solid black 1px;
+	background-color: white;
+	border:solid black 10px;
 }
 
 .pixel {
@@ -22,7 +24,27 @@
 }
 
 #buttons{
-	border: 1px solid black;
-	margin:20px auto;
+	margin:0px 20px 0px 20px;
 	text-align: center;
+	clear:both;
+}
+
+body {
+	background-color: #e6dbc8;
+}
+
+button {
+	background-color: #c8e6d8;
+	border-radius: 5px;
+	border: 1px solid black;
+	color:black;
+	padding: 5px;
+	margin-left:25px;
+	margin-right:25px;
+	font-family: 'Titillium Web', sans-serif;
+}
+h1{
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
+	margin-top:0px;
 }

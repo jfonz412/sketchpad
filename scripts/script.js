@@ -7,7 +7,7 @@ var erase = false;
 $(document).ready(function(){
 
 	//draw the original 16x16 grid
-	$('body').append('<div id="container"></div>');
+	$('h1').append('<div id="container"></div>');
 	for(var i=0;i<(256);i++)
 	{
 		$('#container').append('<div class="pixel"></div>');
@@ -117,6 +117,16 @@ var shader = function() {
 		pencil = !pencil;
 		eraser = false;
 		rainbow = false;
+		if (pencil === true)
+		{
+			$(this).css('color', 'white');
+			$('#eraser').css('color', 'black');
+			$('#rainbow').css('color', 'black');
+		}
+		else
+		{
+			$(this).css('color', 'black');
+		}
 	});
 };
 
@@ -125,6 +135,16 @@ var rainbow = function() {
 		pencil = false;
 		eraser = false;
 		rainbow = !rainbow;
+		if (rainbow === true)
+		{
+			$(this).css('color', 'white');
+			$('#eraser').css('color', 'black');
+			$('#shader').css('color', 'black');
+		}
+		else
+		{
+			$(this).css('color', 'black');
+		}
 	});
 };
 
@@ -133,5 +153,15 @@ var eraser = function() {
 		pencil = false;
 		erase = !erase;
 		rainbow = false;
+		if (erase === true)
+		{
+			$(this).css('color', 'white');
+			$('#rainbow').css('color', 'black');
+			$('#shader').css('color', 'black');
+		}
+		else
+		{
+			$(this).css('color', 'black');
+		}
 	});
 };

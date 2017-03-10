@@ -20,3 +20,6 @@ http://stackoverflow.com/questions/42566365/how-can-i-stop-or-toggle-this-mousee
 
 3/7/17 9:06pm:
 -Finished the shader, needed to parse the float from the string that is the $(this).css('opacity'). There seems to be a glitch where pencil/rainbow will erase pixels and erase will draw solid black. This glitch can fix itself, but I don't know exactly what causes it just yet. Final steps, once again, is to make it look pretty.
+
+3/10/17 1:07pm
+-Finished the CSS and aesthetics. Fairly happy with how it looks, however the positioning gets wonky as you start resizing the page. From now on the lesson here is to use percentages rathat than pixels for scaling and positioning things. I decided to move on rather than spend more time on this. It is complete, but far from perfect. Functions fine though, worked out possible input bugs for the 'New Sketch' button.

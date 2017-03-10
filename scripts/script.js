@@ -7,7 +7,7 @@ var erase = false;
 $(document).ready(function(){
 
 	//draw the original 16x16 grid
-	$('h1').append('<div id="container"></div>');
+	$('body').append('<div id="container"></div>');
 	for(var i=0;i<(256);i++)
 	{
 		$('#container').append('<div class="pixel"></div>');
@@ -92,14 +92,14 @@ var startDraw = function(){
 var newSketch = function() {
 	$('#new_sketch').click(function(){
 		gridSize = prompt("Enter grid size");
-		if (gridSize === null)
+		if (gridSize === null || gridSize === '' || isNaN(gridSize))
 		{
+			alert("Please enter a single number (16,5,32,27...)");
 			return; //checks for canceled prompt
 		}
-
 		$('.pixel').remove();
 
-		var pixelSize = 720/gridSize;
+		var pixelSize = 560/gridSize;
 
 		for(var i=0;i<(gridSize*gridSize);i++)
 		{
